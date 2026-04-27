@@ -59,6 +59,7 @@ const Sidebar = ({
     )}>
       <div className="flex items-center space-x-3 px-2 mb-6">
         <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 via-indigo-500 to-purple-400 shadow-lg shadow-indigo-500/20"></div>
+        <img src="/src/logo.png" alt="Logo" className="w-8 h-8 mr-2 rounded-lg object-cover" />
         <span className="text-lg font-semibold tracking-tight text-white font-display">GeminiX</span>
         <button onClick={() => setIsOpen(false)} className="md:hidden ml-auto p-2 text-zinc-400 hover:text-white">
           <X className="w-5 h-5" />
@@ -455,6 +456,7 @@ export default function App() {
               </div>
             </div>
             <div className="text-center mt-3 text-[10px] text-gray-600 tracking-tight">
+              <img src="/src/logo.png" alt="Logo" className="w-10 h-10 mx-auto mb-2 rounded-full" />
               GeminiX may display inaccurate info, including about people, so double-check its responses.
             </div>
           </div>
