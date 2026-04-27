@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
 const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
