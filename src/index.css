@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Outfit", sans-serif;
+
+  --color-aura-50: #f0f9ff;
+  --color-aura-100: #e0f2fe;
+  --color-aura-200: #bae6fd;
+  --color-aura-300: #7dd3fc;
+  --color-aura-400: #38bdf8;
+  --color-aura-500: #0ea5e9;
+  --color-aura-600: #0284c7;
+  --color-aura-700: #0369a1;
+  --color-aura-800: #075985;
+  --color-aura-900: #0c4a6e;
+  --color-aura-950: #082f49;
+
+  --color-minimal-bg: #0A0A0B;
+  --color-minimal-sidebar: #121214;
+  --color-minimal-input: #1A1A1E;
+}
+
+@layer base {
+  body {
+    @apply bg-minimal-bg text-gray-200 antialiased selection:bg-blue-500/30 selection:text-blue-200;
+  }
+}
+
+.glass-panel {
+  @apply bg-minimal-sidebar border-r border-white/5;
+}
+
+.minimal-card {
+  @apply bg-white/5 border border-white/10 rounded-2xl transition-all hover:bg-white/10;
+}
+
+.markdown-body {
+  @apply prose prose-invert max-w-none prose-zinc;
+}
+
+.markdown-body pre {
+  @apply bg-zinc-900 border border-white/5 rounded-xl p-4;
+}
+
+.markdown-body code {
+  @apply font-mono text-aura-300 bg-aura-500/10 px-1 rounded;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+}
+

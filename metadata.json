@@ -1,0 +1,6 @@
+{
+  "name": "Aura AI Chat",
+  "description": "A premium, multi-functional AI chat assistant powered by Gemini. Features include multimodal input, coding assistance, creative writing, and a full productivity suite.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": []
+}
